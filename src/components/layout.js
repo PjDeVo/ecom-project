@@ -1,10 +1,14 @@
 import React, { Component } from "react";
+import Header from "./headerNav/header";
+import Navbar from "./headerNav/navbar";
 
 class Layout extends Component {
   render() {
     return (
-      <div>
-        <h1>Ecom</h1>
+      <div className="layout">
+        {this.props.children}
+        <Header />
+        <Navbar />
       </div>
     );
   }
