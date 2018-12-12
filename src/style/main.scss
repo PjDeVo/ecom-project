@@ -13,6 +13,10 @@ html {
 body {
   font-family: "Open sans";
   color: #8080;
+
+  a {
+    color: blue;
+  }
 }
 
 @import "layout";
