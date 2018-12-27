@@ -7,8 +7,10 @@ class Purchases extends Component {
   componentDidMount() {
     this.props.fetchUserPurchases();
   }
+
   render() {
     const { className } = this.props;
+
     return (
       <div className={`${className} purchases`}>
         {this.props.purchases.map(purchase => {
@@ -16,7 +18,7 @@ class Purchases extends Component {
             <a
               onClick={() => this.props.setPurchaseDetail(purchase._id)}
               key={purchase._id}
-              className="purchases_purchase purchase"
+              className="purchases__purchase purchase"
             >
               <img
                 className="purchase__img"
