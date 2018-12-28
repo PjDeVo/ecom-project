@@ -16,7 +16,7 @@ class AccountInformation extends Component {
         />
         <AccountInformationForm
           onSubmit={this.onSubmit}
-          className="sign-in__form"
+          className="account-information__form"
         />
       </div>
     );
