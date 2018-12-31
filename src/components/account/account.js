@@ -14,7 +14,7 @@ class Account extends Component {
         path: "/shop"
       },
       {
-        _id: 2,
+        _id: 1,
         title: "Logout",
         path: "/"
       }
