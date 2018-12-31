@@ -31,7 +31,18 @@ class Shop extends Component {
     return (
       <div className="shop">
         {/* shop search bar */}
-        {/* shop product */}
+        <div className="shop__products">
+          {this.props.filteredProducts.map(product => {
+            return (
+              <div key={product._id} className="shop-product">
+                {product.title}
+                <div className="shop-product__description">
+                  {product.description}
+                </div>
+              </div>
+            );
+          })}
+        </div>
         {/* shop cart button */}
       </div>
     );
@@ -39,8 +50,8 @@ class Shop extends Component {
 }
 
 function mapStateToProps(state) {
-  const { categories } = state.shop;
-  return { categories };
+  const { categories, filteredProducts } = state.shop;
+  return { categories, filteredProducts };
 }
 
 Shop = connect(
