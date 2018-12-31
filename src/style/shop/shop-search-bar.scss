@@ -1,6 +1,7 @@
 .shop-search-bar {
   input {
     font-size: 20px;
+
     height: 40px;
     width: 100%;
     border: 1px solid #e6e6e6;
@@ -9,7 +10,7 @@
     color: #808080;
 
     &::placeholder {
-      color: #ccc;
+      color: #cccccc;
     }
 
     &:focus {
@@ -20,20 +21,21 @@
 
 .search-bar-grid {
   display: grid;
-  grid-template-rows: [s]1fr [e];
-  grid-template-columns: 20px [s] 20px [icon-e] 1fr [e];
+  grid-template-rows: [s] 1fr [e];
+  grid-template-columns: 20px [s] 20px [icon-e] 1fr [e] 50px;
 
   &__icon {
     grid-row: s/e;
     grid-column: s/icon-e;
     font-size: 18px;
-    align-self: center;
     z-index: 100;
+    align-self: center;
   }
 
   &__input {
     grid-row: s/e;
     grid-column: 1 / e;
+
     padding-left: 50px;
   }
 }
