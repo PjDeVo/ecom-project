@@ -52,6 +52,7 @@
     color: #e6e6e6;
   }
   &__products {
+    grid-row-gap: 45px;
     padding-top: 50px;
     display: grid;
     grid-row: products-s/products-e;
