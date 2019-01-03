@@ -5,6 +5,8 @@ import PageTitle from "../pageTitle";
 import { connect } from "react-redux";
 import * as actions from "../../actions";
 
+import ShippingForm from "./shippingForm";
+
 class Shipping extends Component {
   componentDidMount() {
     this.props.setHeaderLinks([]);
@@ -15,8 +17,12 @@ class Shipping extends Component {
   };
   render() {
     return (
-      <div className="sign-in">
-        <PageTitle className="sign-in__page-title" title="Shipping Address" />
+      <div className="shipping-form">
+        <PageTitle
+          className="shipping-form__page-title"
+          title="Shipping Address"
+        />
+        <ShippingForm className="shipping-form" onSubmit={this.handleSubmit} />
       </div>
     );
   }
