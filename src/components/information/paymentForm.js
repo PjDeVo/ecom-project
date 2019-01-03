@@ -85,15 +85,15 @@ class PaymentForm extends Component {
   }
 }
 
-PaymentForm = reduxForm({
-  form: "PaymentForm"
-})(PaymentForm);
-
 function mapStateToProps(state) {
   const { name, address } = state.user.user;
   return { name, address };
 }
 
 PaymentForm = connect(mapStateToProps)(PaymentForm);
+
+PaymentForm = reduxForm({
+  form: "PaymentForm"
+})(PaymentForm);
 
 export default PaymentForm;

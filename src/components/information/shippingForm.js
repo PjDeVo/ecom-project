@@ -5,6 +5,7 @@ import { reduxForm, Field } from "redux-form";
 import { FormInput, FormButton } from "../formFields";
 
 import history from "../../history";
+
 import OrderSummary from "./orderSummary";
 
 class ShippingForm extends Component {
@@ -21,7 +22,6 @@ class ShippingForm extends Component {
           name="name"
           component={FormInput}
         />
-
         <Field
           className="shipping-form__address"
           type="address"
@@ -30,7 +30,6 @@ class ShippingForm extends Component {
           name="address"
           component={FormInput}
         />
-
         <Field
           className="shipping-form__city"
           type="city"
@@ -39,7 +38,6 @@ class ShippingForm extends Component {
           name="city"
           component={FormInput}
         />
-
         <Field
           className="shipping-form__state"
           type="state"
@@ -48,7 +46,6 @@ class ShippingForm extends Component {
           name="state"
           component={FormInput}
         />
-
         <Field
           className="shipping-form__zipcode"
           type="zipcode"
