@@ -8,14 +8,15 @@ import {
   fetchUserPurchases,
   setPurchaseDetail,
   fetchCartProducts,
-  addCartProduct
+  addCartProduct,
+  signIn
 } from "./user";
 
 import {
   fetchShopCategories,
   fetchShopProducts,
   filterProductsWithCategoryId,
-  filteredProductsWithQuery
+  filterProductsWithQuery
 } from "./shop";
 
 export {
@@ -24,10 +25,11 @@ export {
   changeNavbarActive,
   fetchUserPurchases,
   setPurchaseDetail,
+  fetchCartProducts,
+  addCartProduct,
+  signIn,
   fetchShopCategories,
   fetchShopProducts,
-  addCartProduct,
   filterProductsWithCategoryId,
-  filteredProductsWithQuery,
-  fetchCartProducts
+  filterProductsWithQuery
 };

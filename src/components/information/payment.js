@@ -22,7 +22,7 @@ class Payment extends Component {
           className="payment__page-title"
           title="Payment Information"
         />
-        <PaymentForm className="payment__form" onSubmit={this.handleSubmit} />
+        <PaymentForm onSubmit={this.onSubmit} className="payment__form" />
       </div>
     );
   }
